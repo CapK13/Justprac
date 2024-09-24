@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 2000px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container .review-page {
+    height: 1900px;
+    width: 100%;
+    /* background-color: gray; */
+    border-radius: 15px;
+}
+
+
+.header-img-section {
+    height: 400px;
+    width: 100%;
+    background-image: url("img/datatreySunSet.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    /* padding: 1rem; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.header-img-section .header-img-nav {
+    height: 60px;
+    width: 100%;
+    /* background-color: gold; */
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-radius: 15px;
+}
+
+.header-img-nav .img-nav-btn {
+    height: inherit;
+    /* background-color: honeydew; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: 0.3s;
+}
+
+.img-nav-btn .nav-btn-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -35%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(151, 147, 147, 0.8));
+}
+
+.nav-btn-icon i {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.img-nav-btn .nav-btn-text {
+        display: grid;
+        justify-content: center;  
+        align-items: flex-end;
+        height: 70px;
+        width: 100px;   
+        /* background-color: gold;   */
+}   
+
+.nav-btn-text h4 a{
+    font-size: 1rem;
+    color: white;
+    font-family: 'Rajdhani';
+    text-decoration: none;
+}
+
+.img-nav-btn .nav-btn-icon:active i{
+    color: gold;
+    transform: scale(110%);
+    filter: drop-shadow(2px 2px 5px gold);
+    /* box-shadow: 1px 1px 20px red; */
+}
+
+.img-nav-btn:active {
+    transform: translateY(-2px);
+}
+
+
+
+.img-information {
+    height: 400px;
+    width: 100%;
+    background-color: #FAF9F6;
+    border-radius: 15px;
+}
+
+
+
+
+
+.img-gallery {
+    height: 600px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #E2DFD2;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 10px;
+    border-radius: 15px;
+}
+
+.img-gallery::-webkit-scrollbar {
+    /* background-color: red; */
+    width: 5px;
+    border-radius: 10px;
+}
+
+.img-gallery::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.img-gallery::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+} 
+
+
+.img {
+    /* height: 120px; */
+    /* width: 240px; */
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.img1 {
+    grid-column: 1 / 3;
+    background-image: url("img/datatreySunSet.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.img2 {
+    background-image: url("img/datatreyToonk.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img3 {
+    background-image: url("img/Girnar.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img4 {
+    grid-column: 2 / 4;
+    background-image: url("img/fogg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img5 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 5;
+    background-image: url("img/Girnar\ gorkhnath\ sikhar.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img6 {
+    grid-row: 5 / 7;
+    grid-column: 1 / 2;
+    background-image: url("img/Hillside\ pathway\ wallpaper.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img7 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    background-image: url("img/Kalka\ Temple\ by\ sachinlakra\ on\ DeviantArt.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img8 {
+    background-image: url("img/logo-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.img9 {
+    grid-row: 6 / 8;
+    grid-column: 3 / 4;
+    background-image: url("img/pandav-tank-qpya3falZX8-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img10 {
+    grid-column: 1 / 3;
+    background-image: url("img/Girnar\ gorkhnath\ sikhar.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.img11 {
+    grid-row: 8 / 10;
+    grid-column: 1 / 4;
+    background-image: url("img/Junagadh\ Girnar\ click\ by\ Nilesh\ Mori.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
